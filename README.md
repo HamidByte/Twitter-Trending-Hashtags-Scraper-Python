@@ -56,6 +56,32 @@ pyinstaller --onefile T3_Scraper.py
 
 This will generate a standalone executable in the `dist` directory. You can run this executable without needing to install Python or any dependencies on the target machine.
 
+## Executing the Script
+
+On Linux, ensure that the generated executable is set as executable by running:
+
+```bash
+chmod +x dist/T3_Scraper dist/run_scraper.sh
+```
+
+**Running the Script**
+
+You can run the script in two ways:
+
+Option 1: Right-click the `run_scraper.sh` file and select "Run as a Program" to execute it.
+
+Option 2: Using the Terminal
+
+- Open a terminal window.
+- Navigate to the directory where the `run_scraper.sh` file is located.
+- Run the following command:
+
+```bash
+./run_scraper.sh
+```
+
+This will execute the scraper by launching the executable.
+
 ## Notes
 
 - Ensure you have the Chrome WebDriver installed. You can use the WebDriver Manager to automatically handle this.
