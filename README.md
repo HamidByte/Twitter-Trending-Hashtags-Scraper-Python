@@ -38,6 +38,24 @@ python T3_Scraper.py
 - `ENGLISH_ONLY_REGEX`: Set to `True` to filter for English-only trends based on regex patterns.
 - `TWEET_MAX_CHARS`: The character limit for hashtags (default is 280).
 
+## Creating a Standalone Executable
+
+To create a standalone executable from the Python script using PyInstaller:
+
+1. Install PyInstaller:
+
+```bash
+pip install pyinstaller
+```
+
+2. Navigate to the directory containing your script and run the following command:
+
+```bash
+pyinstaller --onefile T3_Scraper.py
+```
+
+This will generate a standalone executable in the `dist` directory. You can run this executable without needing to install Python or any dependencies on the target machine.
+
 ## Notes
 
 - Ensure you have the Chrome WebDriver installed. You can use the WebDriver Manager to automatically handle this.
