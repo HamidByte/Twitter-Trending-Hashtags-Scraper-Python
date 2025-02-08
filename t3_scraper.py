@@ -50,7 +50,8 @@ time.sleep(SLEEP_TIME_PAGE_LOAD)
 
 # Try to click on the cookie consent button if it's present
 try:
-    cookie_button = driver.find_element(By.CSS_SELECTOR, 'body > div.fc-consent-root > div.fc-dialog-container > div.fc-dialog.fc-choice-dialog > div.fc-footer-buttons-container > div.fc-footer-buttons > button.fc-button.fc-cta-consent.fc-primary-button')
+    # Use the new CSS selector for the button
+    cookie_button = driver.find_element(By.CSS_SELECTOR, 'button.css-47sehv span')
     cookie_button.click()
     print("Cookie consent clicked.")
 except:

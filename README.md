@@ -20,7 +20,7 @@ pip install selenium beautifulsoup4 webdriver-manager
 1. Run the script:
 
 ```bash
-python T3_Scraper.py
+python t3_scraper.py
 ```
 
 2. The script will:
@@ -51,7 +51,7 @@ pip install pyinstaller
 2. Navigate to the directory containing your script and run the following command:
 
 ```bash
-pyinstaller --onefile T3_Scraper.py
+pyinstaller --onefile t3_scraper.py
 ```
 
 This will generate a standalone executable in the `dist` directory. You can run this executable without needing to install Python or any dependencies on the target machine.
@@ -61,7 +61,7 @@ This will generate a standalone executable in the `dist` directory. You can run 
 On Linux, ensure that the generated executable is set as executable by running:
 
 ```bash
-chmod +x dist/T3_Scraper dist/run_scraper.sh
+chmod +x dist/t3_scraper dist/run_scraper.sh
 ```
 
 **Running the Script**
